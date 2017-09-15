@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "heroku-postbuild": "next build",
-    "start": "next -p process.env.PORT"
+    "start": "node server.js -p $PORT"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.15.4",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "latest"",
+    "next": "latest",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-markdown": "^2.5.0"
