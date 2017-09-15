@@ -1,11 +1,13 @@
 import Layout from '../components/MyLayout.js'
 import fetch from 'isomorphic-unfetch'
+import Markdown from 'react-markdown'
 
 const Post = (props) => (
   <Layout>
     <h1>{props.show.name}</h1>
     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
     <img src={props.show.image.medium} />
+    
   </Layout>
 )
 
